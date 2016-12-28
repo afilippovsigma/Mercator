@@ -73,7 +73,7 @@ class Network_Mapping {
 	 * @return stdClass|boolean {@see get_blog_details}
 	 */
 	public function get_network() {
-		return wp_get_network( $this->network );
+		return get_network( $this->network );
 	}
 
 	/**
