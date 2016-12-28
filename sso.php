@@ -192,7 +192,7 @@ function get_main_site( $network_id = null ) {
 		$network = $GLOBALS['current_site'];
 	}
 	else {
-		$network = wp_get_network( $network_id );
+		$network = get_network( $network_id );
 	}
 
 	if ( ! $primary_id = wp_cache_get( 'network:' . $network->id . ':main_site', 'site-options' ) ) {
